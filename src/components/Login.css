@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap');
+/* font-family: 'Roboto', sans-serif; 
+font-family: 'Poppins', sans-serif;
+*/
+.form-content {
+  display: flex;
+  overflow: hidden;
+}
+.sidebar2 {
+  height: 100vh;
+  border-right: 1px solid rgb(230, 230, 230);
+  padding-top: 10px;
+  width: 15%;
+}
+.sidebar2 ul {
+  margin-left: -20px;
+  text-align: left;
+}
+.sidebar2 ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+.sidebar2 ul li a {
+  color: #575e86;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 20px;
+  font-weight: 500;
+}
+/* =========Login-form============ */
+.login-content {
+  display: flex;
+  background: linear-gradient(100deg, #dadce6 47%, #575e86 0%);
+  justify-content: center;
+  align-items: center;
+}
+.login-form {
+  display: flex;
+}
+.login-section {
+  /* float: left; */
+  background-color: #fff;
+  margin-right: 70px;
+  padding-right: -110px;
+  margin-left: 40px;
+  border-radius: 3%;
+  color: #000a53;
+  width: 45%;
+}
+.login-section h2 {
+  margin: 50px 0 20px 0;
+  font:bold 50px 'Roboto', sans-serif;
+
+}
+.login-section h4 {
+  margin: 0 0 40px 30px;
+  text-align: left;
+  font:bold 30px 'Roboto', sans-serif;
+}
+.login-section p {
+  margin: 0 0 0 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  /* font:medium 20px 'Roboto', sans-serif; */
+  letter-spacing: 1px;
+  text-align: left;
+}
+.login-section button {
+  outline: none;
+  display: block;
+  border: 0;
+  margin: 10px 0px 50px 30px;
+  margin-right: auto;
+  width: 160px;
+  height: 35px;
+  color: #fff;
+  background-image: linear-gradient(to top, #231471, #b9aab3);
+}
+/* ===================== */
+.signin-section {
+  color: #fff;
+  width: 45%;
+}
+.signin-section h3 {
+  margin-bottom: 60px;
+}
+label {
+  width: 150px;
+  padding-left: 60px;
+  text-align: left;
+  font-size: 13px;
+}
+input {
+  width: 55%;
+  height: 10px;
+  margin: 8px 14px;
+  padding: 18px 50px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.forgetpassword {
+  font-size: 12px;
+  color: #fff;
+  margin: 10px 0px 30px 0px;
+  text-align: right;
+  margin-right: 80px;
+}
+.Signin-btn {
+  width: 77%;
+  display: block;
+  margin-right: auto;
+  margin: 30px 0px 30px 80px;
+  height: 35px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+  color: #575e86;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 40px 50px;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 35px;
+}
+.contact p {
+  display: inline;
+  margin-right: 10px;
+}
+ 
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signin-section {
+    text-align: center;
+    margin: 0;
+  }
+  .Signin-btn {
+    margin: 5px 0;
+  }
+  input {
+    margin: 5px 0;
+  }
+  .forgetpassword {
+    margin-right: 10px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+
+  }
+  /* Portrait mobile to landscape and desktop */
+  @media (min-width:481px) and (max-width: 767px) {
+  .sidebar2 ul li {
+    margin: 20px 11px 0 -10px;
+  }
+  .login-form {
+    display: block;
+  }
+  .login-section {
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 20px;
+    padding: 3px 0;
+  }
+  .signin-section{
+    margin: 10px auto;
+  }
+  .signin-section h3{
+    margin: 5px 0 5px 0;
+  }
+  label{
+    padding: 0;
+  }
+  input{
+    margin: 0;
+    width: 55%;
+    margin: 5px 0;
+  }
+  .signin-section {
+    color: #fff;
+    width: 90%;
+  }
+  .Signin-btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar2 ul li {
+    margin: 20px auto;
+    padding: 0 5px;
+    margin-left: -5px;  }
+  .sidebar2 ul li a {
+    font-size: 10px;
+  }
+  .login-content{
+    background: #575e86 !important;
+  }
+  .login-form {
+    display: block;
+  }
+  .login-section {
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 20px;
+    padding: 3px 0;
+  }
+  .signin-section{
+    margin: 10px auto;
+  }
+  .signin-section h3{
+    margin: 5px 0 5px 0;
+  }
+  
+  label{
+    padding: 0;
+  }
+  input{
+    margin: 0;
+    width: 80%;
+    margin: 5px 0;
+    text-align: center;
+  }
+  .signin-section {
+    color: #fff;
+    width: 90%;
+  }
+  .Signin-btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact {
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+}
