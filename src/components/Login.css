@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Poppins:wght@700&family=Roboto:wght@400;500&display=swap");
 /* font-family: 'Roboto', sans-serif; 
 font-family: 'Poppins', sans-serif;
 */
+@font-face {
+  font-family: kanitFont;
+  src: url(https://fonts.google.com/specimen/Kanit);
+}
+* {
+  box-sizing: border-box;
+}
 .form-content {
   display: flex;
   overflow: hidden;
@@ -25,7 +32,7 @@ font-family: 'Poppins', sans-serif;
   color: #575e86;
   text-decoration: none;
   list-style: none;
-  font-family: 'Roboto', sans-serif; 
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
@@ -39,9 +46,9 @@ font-family: 'Poppins', sans-serif;
 .login-form {
   display: flex;
 }
-.login-section {
+.signIn-section {
   /* float: left; */
-  background-color: #fff;
+  background-color: #ffffffd0;
   margin-right: 70px;
   padding-right: -110px;
   margin-left: 40px;
@@ -49,52 +56,50 @@ font-family: 'Poppins', sans-serif;
   color: #000a53;
   width: 45%;
 }
-.login-section h2 {
+.signIn-section h2 {
   margin: 50px 0 20px 0;
-  font:bold 50px 'Roboto', sans-serif;
-
+  font: bold 50px "Roboto", sans-serif;
 }
-.login-section h4 {
+.signIn-section h4 {
   margin: 0 0 40px 30px;
   text-align: left;
-  font:bold 30px 'Roboto', sans-serif;
+  font: bold 30px "Roboto", sans-serif;
 }
-.login-section p {
+.signIn-section p {
   margin: 0 0 0 30px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
   /* font:medium 20px 'Roboto', sans-serif; */
   letter-spacing: 1px;
   text-align: left;
 }
-.login-section button {
-  outline: none;
-  display: block;
-  border: 0;
-  margin: 10px 0px 50px 30px;
-  margin-right: auto;
-  width: 160px;
-  height: 35px;
-  color: #fff;
-  background-image: linear-gradient(to top, #231471, #b9aab3);
-}
 /* ===================== */
-.signin-section {
+.login-section {
   color: #fff;
   width: 45%;
+  min-width: 600px;
+  display: grid;
+  place-items: center;
 }
-.signin-section h3 {
+.login-section h3 {
   margin-bottom: 60px;
+}
+.inputs {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  width: 100%;
+  place-items: center;
 }
 label {
   width: 150px;
-  padding-left: 60px;
+  /* padding-left: 60px; */
   text-align: left;
-  font-size: 13px;
+  font-size: 18px;
 }
 input {
-  width: 55%;
+  width: 220px;
+  min-width: 220px;
   height: 10px;
   margin: 8px 14px;
   padding: 18px 50px;
@@ -104,14 +109,16 @@ input {
   font-size: 12px;
 }
 .forgetpassword {
+  width: 100%;
   font-size: 12px;
   color: #fff;
   margin: 10px 0px 30px 0px;
-  text-align: right;
-  margin-right: 80px;
+  /* margin-right: 80px; */
+  /* text-align: left; */
 }
 .Signin-btn {
-  width: 77%;
+  width: 50%;
+  min-width: 220px;
   display: block;
   margin-right: auto;
   margin: 30px 0px 30px 80px;
@@ -128,7 +135,7 @@ input {
   justify-content: space-between;
   font-size: 14px;
   margin: 40px 50px;
-  font-family: 'Roboto', sans-serif; 
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
@@ -142,7 +149,6 @@ input {
   display: inline;
   margin-right: 10px;
 }
- 
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -162,10 +168,9 @@ input {
   .contact {
     flex-direction: column;
   }
-
-  }
-  /* Portrait mobile to landscape and desktop */
-  @media (min-width:481px) and (max-width: 767px) {
+}
+/* Portrait mobile to landscape and desktop */
+@media (min-width: 481px) and (max-width: 767px) {
   .sidebar2 ul li {
     margin: 20px 11px 0 -10px;
   }
@@ -179,16 +184,16 @@ input {
     border-radius: 20px;
     padding: 3px 0;
   }
-  .signin-section{
+  .signin-section {
     margin: 10px auto;
   }
-  .signin-section h3{
+  .signin-section h3 {
     margin: 5px 0 5px 0;
   }
-  label{
+  label {
     padding: 0;
   }
-  input{
+  input {
     margin: 0;
     width: 55%;
     margin: 5px 0;
@@ -207,11 +212,12 @@ input {
   .sidebar2 ul li {
     margin: 20px auto;
     padding: 0 5px;
-    margin-left: -5px;  }
+    margin-left: -5px;
+  }
   .sidebar2 ul li a {
     font-size: 10px;
   }
-  .login-content{
+  .login-content {
     background: #575e86 !important;
   }
   .login-form {
@@ -224,17 +230,17 @@ input {
     border-radius: 20px;
     padding: 3px 0;
   }
-  .signin-section{
+  .signin-section {
     margin: 10px auto;
   }
-  .signin-section h3{
+  .signin-section h3 {
     margin: 5px 0 5px 0;
   }
-  
-  label{
+
+  label {
     padding: 0;
   }
-  input{
+  input {
     margin: 0;
     width: 80%;
     margin: 5px 0;
@@ -253,5 +259,4 @@ input {
     flex-direction: column;
     font-size: 10px;
   }
-
 }

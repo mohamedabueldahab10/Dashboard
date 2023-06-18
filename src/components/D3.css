@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Roboto', sans-serif; 
+  font-family: "Roboto", sans-serif;
   background-color: #fff;
   border-radius: 20px;
   margin: 30px 20px;
 }
 
-.staticsNums{
-  background-color: #768BC4;
+.staticsNums {
+  background-color: #768bc4;
   width: 20%;
   height: 300px;
   border-radius: 20px 0 20px 20px;
@@ -17,55 +17,54 @@
   flex-direction: column;
 }
 
-.staticsNums h4{
+.staticsNums h4 {
   text-align: center;
-  margin:30px ;
+  margin: 30px;
   font-weight: 700;
   font-size: 21;
   color: #fff;
 }
 
-.seprated{
+.seprated {
   height: 5px;
   background-color: #fff;
-  
 }
 
-.staticsAWD{
+.staticsAWD {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
   margin: 0 5px;
+  text-align: left;
   /* margin-bottom: 50px; */
 }
 
-.wordFont{
-  font-family: 'Roboto', sans-serif; 
+.wordFont {
+  font-family: "Roboto", sans-serif;
   font-size: 13;
   font-weight: 800;
   color: #fff;
 }
 
-.wordGreen{
-  color: #36CD59;
-  font-family: 'Roboto', sans-serif; 
+.wordGreen {
+  color: #36cd59;
+  font-family: "Roboto", sans-serif;
   font-size: 22;
   font-weight: 700;
 }
-.wordYellow{
-  color: #FFDF00;
-  font-family: 'Roboto', sans-serif; 
+.wordYellow {
+  color: #ffdf00;
+  font-family: "Roboto", sans-serif;
   font-size: 22;
   font-weight: 700;
 }
-.wordRed{
-  color: #F00B0B;
-  font-family: 'Roboto', sans-serif; 
+.wordRed {
+  color: #f00b0b;
+  font-family: "Roboto", sans-serif;
   font-size: 22;
   font-weight: 700;
 }
-
 
 .chart {
   width: 80%;

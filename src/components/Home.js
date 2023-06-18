@@ -26,7 +26,7 @@ export default function Home() {
         {/* =================================== */}
         <div className="input-search">
           <div className="iconsearch">
-            <input type="text" placeholder="        Search"></input>
+            <input type="text" placeholder="Search" />
             <BiSearch className="icon" />
           </div>
 
@@ -94,8 +94,12 @@ export default function Home() {
               </div>
               <div className="details-item2">
                 <div className="box">
-                  <div><h4>500</h4></div>
-                  <div><AiFillStar className="AiFillStar" /></div>
+                  <div>
+                    <h4>500</h4>
+                  </div>
+                  <div>
+                    <AiFillStar className="AiFillStar" />
+                  </div>
                 </div>
                 <p>All AWD</p>
               </div>
